@@ -1,0 +1,51 @@
+
+# This describes the priciples and log for the inventory structure and
+process.
+
+
+devmonitor:/var/ff_inventory_nodes/node_id.csv
+----------------------------------------------
+<TBC: build process to back this file up daily.>
+This file is kept that serves as te master list of nodes we are working
+with.  It comprises one column of the Solid Node IDs.  We can add or
+delete Node IDs from this file.  If a node is not in Solid, it can not
+be kept in here.
+
+devmonitor:/var/ff_inventory_nodes/node_data.json
+------------------------------------------------
+<TBC: build process to back this file up daily.>
+This file keeps the master data inventory for nodes.  
+
+
+is kept that serves as te master list of nodes we are working
+with.  It comprises one column of the Solid Node IDs.  We can add or
+delete Node IDs from this file.  If a node is not in Solid, it can not
+be kept in here.  <TBC: build process to back this file up daily.>
+
+
+id integrity check and clean-up
+- read id file
+- list all ids in file not found in Solid, should be zero
+- 
+
+
+
+>>>>>>>>>>>>>>>>>>
+
+- The NI "extends" the Solid master data. This application here
+extends this into a "stock inventory" list with extended power or
+aother attributes.
+
+- The NI is a tree struckure. Attribute names are the array keys and
+attribute values are the array values. A NI strucure is defined. This
+also kept in the data dir. All possible keys and vlaue scope is stored
+in here. Each key has as its first value an attribute that denotes if
+the master data is on Solid or on this local data repo. "m" =>
+['s','d'].
+
+
+json
+
+
+
+

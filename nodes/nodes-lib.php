@@ -3,13 +3,18 @@
 //$DATA_DIR = '/var/ff-inventory';
 
 
+//user: bunpeest651a64r
+//pass: 33vj543rlcr978
+$vhserver_IP = "41.85.15.61:3306"; // replication db (reporting)
+
+
 define ('DBUSERSLD','bunpeest651a64r');
 define ('DBPASSSLD','33vj543rlcr978');
 define ('DBNAMESLD','frogfootdb');
 
 
 
-    $vhserver_IP = "41.85.15.50:3306";  // jhb-solid-db01
+//    $vhserver_IP = "41.85.15.50:3306";  // jhb-solid-db01
 
     $vhserver_db_unsername = DBUSERSLD ; 
     $vhserver_db_password  = DBPASSSLD ; 
@@ -18,7 +23,7 @@ define ('DBNAMESLD','frogfootdb');
     
 
     // Connect to DB-server
-    $link = mysql_connect($vhserver_IP, $vhserver_db_unsername, $vhserver_db_password);
+    $link = mysqli_connect($vhserver_IP, $vhserver_db_unsername, $vhserver_db_password, $vhserver_db_name);
 
     if (!$link) {
 
@@ -29,7 +34,7 @@ define ('DBNAMESLD','frogfootdb');
 	echo "Opened\n";
     }
 
-
+// mysqli_connect($host, $username, $pass, "your_database");
 
 
 
