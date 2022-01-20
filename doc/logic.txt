@@ -28,6 +28,40 @@ id integrity check and clean-up
 - list all ids in file not found in Solid, should be zero
 - 
 
+node
+
+relational
+-
+
+attributes
+- name
+- value type: s,m,t
+- value range if not t
+
+node in tree:
+- s: single
+- m: multiple
+- t: text
+
+- parent
+
+- type: type, 
+attributes
+
+compulsory, optional
+
+- children 
+
+tranverse
+
+
+
+
+---
+sort extension to solid but can dev faster, middle ware
+keep inventory, not flow process
+
+
 
 
 >>>>>>>>>>>>>>>>>>

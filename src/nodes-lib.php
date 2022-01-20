@@ -1,7 +1,49 @@
 <?php
 
-//$DATA_DIR = '/var/ff-inventory';
+$GLOB = array( 'repos' =>
+	       array ( 'DATA_DIR'               => '/var/ff_inventory_nodes',
+		       'NODE_ID_FN'             => 'node_id.csv',
+		       'NODE_DATA_FN'           => 'node__data.json'
+		       )
+	       );
+		       
+  
 
+//--- Error_codes
+
+//---
+
+
+
+//-------------------------------------------------------------------------------------------- 
+function init() {
+    global $GLOB;
+ 
+    // repos existance checking
+    if (file_exists( $GLOB ['repos'] ['DATA_DIR'])) {
+	echo "repos, DATA_DIR exists\n";
+    } esle {
+	
+	
+	
+    
+    echo "hello";
+    
+
+    
+
+    return 0;
+}
+//-------------------------------------------------------------------------------------------- 
+
+	      
+	      
+
+
+
+
+function db () {
+    
 
 //user: bunpeest651a64r
 //pass: 33vj543rlcr978
@@ -36,6 +78,8 @@ define ('DBNAMESLD','frogfootdb');
 
 // mysqli_connect($host, $username, $pass, "your_database");
 
+    return 0;
+}
 
 
 //-------------------------------------------------------------------------------------------- 
